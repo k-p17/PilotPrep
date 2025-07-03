@@ -1,0 +1,61 @@
+.flowchart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.flowchart-node {
+  background-color: #0070f3;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.3s;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.flowchart-node:hover {
+  transform: scale(1.05);
+  background-color: #005ecb;
+}
+
+/* Vertical line connecting nodes */
+.flowchart-node::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 40px;
+  background-color: #0070f3;
+}
+
+.flowchart-node:last-child::after {
+  display: none;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 600px) {
+  .flowchart-container {
+    padding: 1rem;
+  }
+
+  .flowchart-node {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .flowchart-node::after {
+    height: 30px;
+  }
+}

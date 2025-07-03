@@ -1,0 +1,39 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.question-block {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.question-block:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.options {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.options li {
+  margin-bottom: 10px;
+}
+
+.options input[type="radio"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
