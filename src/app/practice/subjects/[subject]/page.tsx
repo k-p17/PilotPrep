@@ -1,8 +1,9 @@
 'use client';
-
+import './style.css';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import './style.css'; // optional: apply consistent styling
+
+
 
 // ✅ All common DGCA subjects with their sources
 const subjectSources: Record<string, string[]> = {
