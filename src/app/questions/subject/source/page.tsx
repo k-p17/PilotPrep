@@ -2,7 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import questionsData from '@/src/data/questions'; // Adjust path if needed
-import '../../../../../styles/questions.css'; // Optional: your styles
+//import '../../../../../styles/questions.css'; // Optional: your styles
 
 export default function SubjectSourceQuestionsPage() {
   const params = useParams();
